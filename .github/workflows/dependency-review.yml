@@ -1,11 +1,11 @@
 name: 'Dependency Review'
-on: [push]
+on: [pull_request]
 
 permissions:
   contents: read
 
 jobs:
-  dependency-review:
+  dependency-reviews:
     runs-on: ubuntu-latest
     steps:
       - name: 'Checkout Repository'
